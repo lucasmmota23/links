@@ -1,98 +1,40 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 23%,
-    rgba(133, 0, 110, 1) 99%
-  );
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Links</title>
+</head>
 
-img {
-  display: block;
-}
+<body>
 
-li {
-  list-style: none;
-}
+  <section class="linketree">
 
-a {
-  text-decoration: none;
-}
+    <div class="linketree-container">
 
-.linketree-container {
-  padding: 40px 20px;
-  max-width: 1000px;
-  display: grid;
-  margin: 0 auto;
-  text-align: center;
-  gap: 30px;
-}
+      <div class="header">
+        <img class="img" src="./img.png" alt="">
+        <h1>Lucas Monteiro</h1>
+        <h2>FrontEnd Developer</h2>
+      </div>
 
-.header {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.header img {
-  width: 150px;
-  border-radius: 75px;
-}
+      <div class="links-container">
+        <a class="links" href="">Linkedin</a>
+        <a class="links" href="">GitHub</a>
+        <a class="links" href="">Portifólio</a>
+        <a class="links" href="">Instagram</a>
+        <a class="links" href="">Youtube</a>
+      </div>
 
-.header h1 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
 
-.header h2 {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 5px;
-}
 
-.links {
-  margin: 0 auto;
-}
 
-.links-container {
-  display: grid;
-  gap: 30px;
-}
+  </section>
 
-.links li {
-  padding: 20px 200px;
-  background: white;
-  border-radius: 50px;
-}
+</body>
 
-.links a {
-  color: rgba(133, 0, 110, 1);
-  font-size: 1.4rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
-.links :hover {
-  background-color: none;
-}
-
-@media (max-width: 800px) {
-  .linketree-container {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .links li {
-    padding: 20px 100px;
-  }
-}
+</html>
