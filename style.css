@@ -1,40 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Links</title>
-</head>
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 23%,
+    rgba(133, 0, 110, 1) 99%
+  );
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
-<body>
+img {
+  display: block;
+}
 
-  <section class="linketree">
+li {
+  list-style: none;
+}
 
-    <div class="linketree-container">
+a {
+  text-decoration: none;
+  color: white;
+}
 
-      <div class="header">
-        <img class="img" src="./img.png" alt="">
-        <h1>Lucas Monteiro</h1>
-        <h2>FrontEnd Developer</h2>
-      </div>
+.linketree-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-      <div class="links-container">
-        <a class="links" href="">Linkedin</a>
-        <a class="links" href="">GitHub</a>
-        <a class="links" href="">Portifólio</a>
-        <a class="links" href="">Instagram</a>
-        <a class="links" href="">Youtube</a>
-      </div>
+.img {
+  width: 150px;
+  border-radius: 500px;
+}
 
+.header h1 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
 
+.header h2 {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-  </section>
+.linketree-container li:hover {
+  background-color: white;
+  color: black;
+}
 
-</body>
+.links {
+  border: 2px solid white;
+  padding: 20px 25vw;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
 
-</html>
+.links:hover {
+  background-color: white;
+  color: black;
+}
